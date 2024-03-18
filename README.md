@@ -1,4 +1,10 @@
 # Transmisja w systemie ARQ (Automatic Repeat Request)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
+![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/MikeStork/ProjektNIDUC)
+![GitHub repo size](https://img.shields.io/github/repo-size/MikeStork/ProjektNIDUC)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/MikeStork/ProjektNIDUC?color=%2300ff00)
+![GitHub last commit](https://img.shields.io/github/last-commit/MikeStork/ProjektNIDUC)
+
 
 Zespół: 
 - Robert Pytel
