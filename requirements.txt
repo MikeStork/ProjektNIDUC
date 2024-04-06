@@ -1,0 +1,3 @@
+#   tutaj wpiszcie wszelakie wymagane libki
+#   komenda do instalowania:
+#   pip install -r requirements.txt
