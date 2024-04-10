@@ -20,9 +20,9 @@ Zespół:
 2. * [ ] Budowa biblioteki przyjmującej na wejście strumień danych, przetwarzającej go za pomocą wybranego algorytmu i zwracającej jako strumień danych
 	1. * [ ] Strumień wejściowy do wyboru poprzez prametr
 	2. * [ ] Algorytmy do wyboru poprzez parametr
-   		1. * [x] CRC_X
-        	2. * [x] Parity Bit
-            	3. * [ ] [...]
+   			1. * [x] CRC_X
+        		2. * [x] Parity Bit
+            		3. * [ ] [...]
 	3. * [ ] Kanały transmisji
     		1. * [x] Binary Symetric Channel
          	2. * [x] Gillbert - Elliott Channel
