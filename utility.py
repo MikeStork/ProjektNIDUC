@@ -48,8 +48,8 @@ def flipRandomBits(s: str, n: int) -> str:
     Returns:
         str: a new string with n bits flipped
     """
+    indices = random.sample(range(len(s)), n)
     s = list(s)
-    for i in range(len(s)):
-        if random.random() < n:
-            s[i] = "0" if s[i] == "1" else "1"
+    for i in indices:
+        s[i] = "0" if s[i] == "1" else "1"
     return "".join(s)
