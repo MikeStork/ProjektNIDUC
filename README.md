@@ -20,6 +20,17 @@ Zespół:
 2. * [ ] Budowa biblioteki przyjmującej na wejście strumień danych, przetwarzającej go za pomocą wybranego algorytmu i zwracającej jako strumień danych
 	1. * [ ] Strumień wejściowy do wyboru poprzez prametr
 	2. * [ ] Algorytmy do wyboru poprzez parametr
-	3. * [ ] Strumień wyjściowy do wyboru poprzez parametr
+   		1. * [x] CRC_X
+        	2. * [x] Parity Bit
+            	3. * [ ] [...]
+	3. * [ ] Kanały transmisji
+    		1. * [x] Binary Symetric Channel
+         	2. * [x] Gillbert - Elliott Channel
+         	3. * [ ] [...] 	 	
+	4. * [ ] Strumień wyjściowy do wyboru poprzez parametr
+    		1. * [ ] Generowanie pliku danych
+         	2. * [ ] Generowanie Wykresów
+         	3. * [ ] Generowanie raportów
+         	4. * [ ] [...] 
 3. * [ ] Przeprowadzenie badań efektywności biblioteki i dokumentacja badań
 4. * [ ] Optymalizacja biblioteki (pod różnym kątem)
