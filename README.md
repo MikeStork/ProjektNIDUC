@@ -35,3 +35,7 @@ Zespół:
          	4. * [ ] [...] 
 3. * [ ] Przeprowadzenie badań efektywności biblioteki i dokumentacja badań
 4. * [ ] Optymalizacja biblioteki (pod różnym kątem)
+
+# Komendy do bibliotek
+- pipreq ./ (--force)
+- pip install -r ./requirements.txt
