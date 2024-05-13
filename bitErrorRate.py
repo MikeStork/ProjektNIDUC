@@ -1,4 +1,4 @@
-def bitErrorRate(bit_seq1, bit_seq2):
+def bitErrorRateValue(bit_seq1, bit_seq2):
     # Sprawdzamy, czy długości sekwencji są równe
     if len(bit_seq1) != len(bit_seq2):
         raise ValueError("Bit sequences must be of equal length.")
@@ -12,3 +12,18 @@ def bitErrorRate(bit_seq1, bit_seq2):
             errors += 1
 
     return errors
+
+
+def bitErrorRate(bit_seq1, bit_seq2):
+    if len(bit_seq1) != len(bit_seq2):
+        raise ValueError("Bit sequences must be of equal length.")
+
+    return bitErrorRateValue(bit_seq1, bit_seq2) / len(bit_seq1)
+
+
+if __name__ == '__main__':
+    bit_seq1 = "11110000"
+    bit_seq2 = "00011111"
+    print(bitErrorRateValue(bit_seq1, bit_seq2))
+    print("\n")
+    print(bitErrorRate(bit_seq1, bit_seq2))
