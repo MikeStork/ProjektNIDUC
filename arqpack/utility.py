@@ -53,3 +53,21 @@ def flipRandomBits(s: str, n: int) -> str:
     for i in indices:
         s[i] = "0" if s[i] == "1" else "1"
     return "".join(s)
+def getSignalFromFile(filename: str)->str:
+    with open("../input/"+filename,"r+") as f:
+        return f.read().replace("\t","").replace("\n","").replace(" ","")
+def writeSignalToFile(filename: str, signal: str) ->bool:
+    try:
+        with open("../output/"+filename, 'w') as file:
+            file.write(signal)
+        return True
+    except Exception as e:
+        print(f"Error occurred: {e}")
+        return False
+def checkIfCorrectFormOfSignal(signal:str) ->bool:
+    for x in signal:
+        if(x == "0" or x == "1"):
+            continue
+        else:
+            return False
+    return True    
