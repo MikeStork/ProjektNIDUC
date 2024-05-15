@@ -44,6 +44,9 @@ def crc_check(input_bitstring:str, polynomial_bitstring:str, check_value:str)->b
 def ParityBit(data:str)->str:
     return crc_remainder(data, "11","0")
 
+def CRC8(data:str)->str:
+    return crc_remainder(data, "110100111","0")
+
 def CRC32(data:str)->str:
     return crc_remainder(data, "100000100110000010001110110110111","0")
 
