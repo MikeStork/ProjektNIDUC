@@ -9,6 +9,7 @@
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
 
+Grupa 5
 Zespół: 
 - Robert Pytel
 - Maciej Chamera
@@ -34,3 +35,7 @@ Zespół:
          	4. * [ ] [...] 
 3. * [ ] Przeprowadzenie badań efektywności biblioteki i dokumentacja badań
 4. * [ ] Optymalizacja biblioteki (pod różnym kątem)
+
+# Komendy do bibliotek
+- pipreq ./ (--force)
+- pip install -r ./requirements.txt
