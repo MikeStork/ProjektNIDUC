@@ -14,5 +14,3 @@ def saveDataToCSV(data: list[tuple]):
     writer.writerow(["Bit count", "Encoding", "Data block size", "Bit error rate", "Redundant bits count"])
     writer.writerows(data)
     file.close()
-    
-saveDataToCSV([(1, "Hamming", 4, 0.1, 3), (2, "Parity", 8, 0.2, 1), (3, "CRC", 16, 0.3, 5)])
