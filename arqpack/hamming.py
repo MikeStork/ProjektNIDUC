@@ -1,6 +1,7 @@
 import utility
+import komm
 
-
+# TODO change to komm implementation
 def encode(data: str) -> str:
     """Encode a string using Hamming(7,4) code
 
