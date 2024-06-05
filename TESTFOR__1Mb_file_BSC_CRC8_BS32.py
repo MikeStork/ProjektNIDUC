@@ -6,9 +6,9 @@ from arqpack.bitErrorRate import bitErrorRate as ber
 import numpy as np
 import matplotlib.pyplot as plt
 
-start = 0.01
+start = 0.020
 stop = 0.2
-step = 0.001
+step = 0.005
 
 Propabilities = np.arange(start, stop, step)
 
@@ -20,7 +20,7 @@ Data_Propability = []
 # Read and prepare the input signal
 entry = util.getSignalFromFile("input/example.txt")
 entry = entry.replace("\n", "").replace("\t", "").replace(" ", "")
-signal = util.splitBinary(entry, 32)
+signal = util.splitBinary(entry, 64)
 
 for prop in Propabilities:
     # Initialize error and CRC bit counters
@@ -72,7 +72,10 @@ for prop in Propabilities:
     Data_Redundancy.append(Redundancy)
 
     
-
+with open("output/aaaBSC_64_CRC8.txt") as f:
+    f.write(";".join(Data_Propability)+"\n")
+    f.write(";".join(Data_Ber)+"\n")
+    f.write(";".join(Data_Redundancy)+"\n")
 
 
 # Plotting the data
@@ -82,10 +85,12 @@ plt.plot(Propabilities, Data_Ber, label='BER', marker='o')
 plt.plot(Propabilities, Data_Redundancy, label='Redundancy', marker='s')
 plt.plot(Propabilities, Data_Propability, label='Probability', marker='^')
 
+    
+
 plt.xlabel('Probability')
 plt.ylabel('Values')
 plt.title('Changes in BER, Redundancy, and Probability')
 plt.legend()
 plt.grid(True)
-
+plt.savefig('output/aaa1Mb_BSC_64_CRC8.png', format='png')
 plt.show()
