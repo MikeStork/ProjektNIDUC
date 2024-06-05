@@ -4,9 +4,10 @@ import arqpack.utility as util
 import arqpack.checksums as checksums
 from arqpack.bitErrorRate import bitErrorRate as ber
 import numpy as np
+import matplotlib.pyplot as plt
 
-start = 0.0001
-stop = 0.4
+start = 0.01
+stop = 0.2
 step = 0.001
 
 Propabilities = np.arange(start, stop, step)
@@ -69,3 +70,22 @@ for prop in Propabilities:
     Data_Ber.append(ber(inputed_data, ''.join(receivedWithoutCRC)))
     Data_Propability.append(prop)
     Data_Redundancy.append(Redundancy)
+
+    
+
+
+
+# Plotting the data
+plt.figure(figsize=(10, 6))
+
+plt.plot(Propabilities, Data_Ber, label='BER', marker='o')
+plt.plot(Propabilities, Data_Redundancy, label='Redundancy', marker='s')
+plt.plot(Propabilities, Data_Propability, label='Probability', marker='^')
+
+plt.xlabel('Probability')
+plt.ylabel('Values')
+plt.title('Changes in BER, Redundancy, and Probability')
+plt.legend()
+plt.grid(True)
+
+plt.show()
