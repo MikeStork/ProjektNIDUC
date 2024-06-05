@@ -53,3 +53,31 @@ def flipRandomBits(s: str, n: int) -> str:
     for i in indices:
         s[i] = "0" if s[i] == "1" else "1"
     return "".join(s)
+def getSignalFromFile(filename: str)->str:
+    with open(filename,"r") as f:
+        return f.read().replace("\t","").replace("\n","").replace(" ","")
+def writeSignalToFile(filename: str, signal: str) ->bool:
+    try:
+        with open(filename, 'w') as file:
+            file.write(signal)
+        return True
+    except Exception as e:
+        print(f"Error occurred: {e}")
+        return False
+def checkIfCorrectFormOfSignal(signal:str) ->bool:
+    for x in signal:
+        if(x == "0" or x == "1"):
+            continue
+        else:
+            return False
+    return True    
+def convertStringToArrayOfBits(string :str)->list[int]:
+    out = []
+    for x in string:
+        out.append(int(x))
+    return out
+def convertArrayOfBitsToString(array :list[int])->str:
+    out = ""
+    for x in array:
+        out.append(str(x))
+    return out
