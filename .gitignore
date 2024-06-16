@@ -195,7 +195,9 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,python
 
 # other
-input/*
+
 output/*
 venv
 .vscode
+a.txt
+TESTFOR_1Mb_file_BSC_0001
