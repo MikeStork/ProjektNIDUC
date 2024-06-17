@@ -195,10 +195,11 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,python
 
 # other
-input/*
+
 output/*
 venv
 .vscode
+<<<<<<< HEAD
 ~$GilbertEllioChannelBERs.xlsx
 example copy.txt
 example.txt
@@ -224,3 +225,7 @@ wynikiCRC16GBCzly.txt
 wynikiCRC32GBCzly.txt
 ZOBAZOBAwynikiCRC8GBCzly.txt
 BinarySymmetricChannelBERWithoutARQ.py
+=======
+a.txt
+TESTFOR_1Mb_file_BSC_0001
+>>>>>>> d23e98b405b9c313a0735f12a4f0bd59609c37f6
