@@ -1,5 +1,4 @@
 import numpy as np
-from typing import List
 
 class GilbertElliotChannel:
     def __init__(
@@ -15,18 +14,21 @@ class GilbertElliotChannel:
             self.state_change_prob_bad_to_good = state_change_prob_bad_to_good
             self.state = 0  # 0 represents "good" state, 1 represents "bad" state
 
-    def transmit(self, data: List[int]) -> List[int]:
+    def transmit(self, data: str) -> str:
         """
         For every bit in input signal, generate error with given probability.
         After that update channel state.
         """
-        transmitted_data = []
+        transmitted_data = ""
         for bit in data:
             error = self._generate_error()
             if error:
-                transmitted_data.append(1 - bit)  # Flip the bit
+                if bit == "0":
+                    transmitted_data += "1"
+                elif bit == "1":
+                    transmitted_data += "0"
             else:
-                transmitted_data.append(bit)
+                transmitted_data += bit
             self._update_state()
         return transmitted_data
 
