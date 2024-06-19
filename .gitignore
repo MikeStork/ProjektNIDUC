@@ -229,3 +229,8 @@ BinarySymmetricChannelBERWithoutARQ.py
 a.txt
 TESTFOR_1Mb_file_BSC_0001
 >>>>>>> d23e98b405b9c313a0735f12a4f0bd59609c37f6
+wyniki_ok/LEGANCKI-wynikiCRC1GBCdobry.txt
+wyniki_ok/LEGANCKI-wynikiCRC8GBCdobry.txt
+wyniki_ok/LEGANCKI-wynikiCRC16GBCdobry.txt
+wyniki_ok/wynikiCRC1GBCdobry.txt
+wyniki_ok/wynikiCRC1GBCzly.txt
